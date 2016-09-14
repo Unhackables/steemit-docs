@@ -39,6 +39,52 @@ html, body {
 // TABLE OF CONTENTS
 ////////////////////////////////////////////////////////////////////////////////
 
+// top navbar area
+
+.navbar-container .navbar {
+  position: fixed!important;
+  width: 100%!important;
+  height: 70px;
+  background: #1A5099;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 5000;
+}
+
+.navbar ul li a {
+  color: #FFF;
+}
+
+nav ul {
+  display: block;
+}
+
+nav li {
+  list-style: none!important;
+  color: #FFF;
+  padding: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  float: left;
+}
+
+.sub-menu {
+  float: right;
+  li > a {
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-transform: Capitalize;
+  }
+}
+
+// main content
+
 #toc > ul > li > a > span {
   float: right;
   background-color: #2484FF;
@@ -55,20 +101,47 @@ html, body {
     $nav-subitem-bg;
 }
 
+.tocify-wrapper a {
+  color: #596065;
+}
+
+.tocify-focus a {
+  color: white;
+}
+
+.logo {
+  display: flex;
+  margin-top: 5px;
+  span {
+    color: white;
+    font-size: 18px;
+  }
+}
+.logo * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logo-img {
+  height: 40px;
+  margin: 10px 5px 5px 10px;
+  text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+}
+
 .tocify-wrapper {
   transition: left 0.3s ease-in-out;
-
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
   z-index: 30;
-  top: 0;
+  top: 70px;
   left: 0;
   bottom: 0;
   width: $nav-width;
-  background-color: $nav-bg;
+  background-color: white;
   font-size: 13px;
   font-weight: bold;
+  border-right: 3px solid rgba(39,46,51,.1);
 
   // language selector for mobile devices
   .lang-selector {
@@ -97,15 +170,16 @@ html, body {
       margin: $nav-v-padding $nav-padding;
       width: $nav-width - 30;
       outline: none;
-      color: $nav-text;
+      color: $nav-search-text;
       border-radius: 0; /* ios has a default border radius */
     }
 
     &:before {
       position: absolute;
       top: 17px;
+      margin-left: 5px;
       left: $nav-padding;
-      color: $nav-text;
+      color: $nav-search-text;
       @extend %icon-search;
     }
   }
@@ -263,7 +337,6 @@ html, body {
   z-index: 10;
   background-color: $main-bg;
   min-height: 100%;
-
   padding-bottom: 1px; // prevent margin overflow
 
   // The dark box is what gives the code samples their dark background.
@@ -276,7 +349,7 @@ html, body {
     background-color: $examples-bg;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 70px;
     bottom: 0;
   }
 
@@ -284,11 +357,12 @@ html, body {
     position: fixed;
     z-index: 50;
     border-bottom: 5px solid $lang-select-active-bg;
+    padding: 15px 28px 14px
   }
 }
 
 .lang-selector {
-  background-color: $lang-select-bg;
+  background-color: $examples-bg;
   width: 100%;
   font-weight: bold;
   a {
@@ -299,6 +373,9 @@ html, body {
     padding: 0 10px;
     line-height: 30px;
     outline: 0;
+    background: rgba(27,58,82,0.3);
+    margin: 5px;
+    border-bottom: 2px solid rgba(20,45,92,0.3);
 
     &:active, &:focus {
       background-color: $lang-select-pressed-bg;
@@ -306,7 +383,7 @@ html, body {
     }
 
     &.active {
-      background-color: $lang-select-active-bg;
+      background-color: #1A5099;
       color: $lang-select-active-text;
     }
   }
@@ -327,6 +404,8 @@ html, body {
   // to place content above the dark box
   position: relative;
   z-index: 30;
+  top: 70px;
+  padding-bottom: 10px;
 
   &:after {
     content: '';
@@ -515,6 +594,27 @@ html, body {
   }
 }
 
+.api-heading {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 200;
+  box-shadow: 0 1px 2px #eceef0;
+}
+
+.search input {
+  top: 45px;
+  border: none;
+  box-shadow: 0 0 1px rgba(0,0,0,.3);
+  border-radius: 3px;
+  pointer-events: all;
+  padding: 10px 10px 10px 30px;
+  background: rgba(255,255,255,.5);
+}
+
+.highlight {
+
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // CODE SAMPLE STYLES
 ////////////////////////////////////////////////////////////////////////////////
@@ -522,7 +622,7 @@ html, body {
 
 .content {
   pre, blockquote {
-    background-color: $code-bg;
+    //background-color: $code-bg;
     color: #fff;
 
     padding: 2em $main-padding;
@@ -548,18 +648,47 @@ html, body {
 
   pre {
     @extend %code-font;
+    border: 1px solid rgba(0,0,0,0.1);
   }
 
   blockquote {
     &>p {
-      background-color: $code-annotation-bg;
+      background-color: $pre-background;
       border-radius: 5px;
       padding: $code-annotation-padding;
-      color: #ccc;
+      color: #102C4D;
       border-top: 1px solid #000;
       border-bottom: 1px solid #404040;
+      text-shadow: none;
+      margin-bottom: 5px;
     }
   }
+}
+
+.content blockquote > p {
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.content pre, .content blockquote {
+  background: #e7e9ed;
+  text-shadow: none;
+  color: #102C4D;
+  p {
+    color: #102C4D;
+  }
+}
+
+// custom steem syntax colors
+.highlight .err {
+  background: none;
+}
+
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #1A5099;
+}
+
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #1A5099;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -588,6 +717,10 @@ html, body {
   .tocify-wrapper .tocify-item > a {
     padding-top: 0.3em;
     padding-bottom: 0.3em;
+  }
+
+  .sub-menu-show {
+    display: none;
   }
 }
 
