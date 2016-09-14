@@ -5,10 +5,11 @@
   
 </p>
 
-<p align="center">Welcome to the <a href="https://steemit.com">steemit</a> API and Developer Wiki.</p>
+<p align="center">Welcome to the <a href="https://steemit.com" target="_blank">steemit</a> API and Developer Wiki.</p>
 
 <p align="center"><img src="https://s26.postimg.org/xih11p6mh/dev_promo.png" width=700 alt="\"></p>
 
+------------
 
 Steemit is the social media platform where everyone gets paid for creating and curating content.
 
@@ -17,6 +18,7 @@ The following API documents provide details on how to interact with the Steem bl
 The developer portal will also serve as a toolbox for steem clients, libraries, and language wrappers.
 
 ### Contributing
+------------
 
 Steemit docs are built with the great [slate](https://github.com/lord/slate) framework.  Slate supports markdown for editing content. 
 
