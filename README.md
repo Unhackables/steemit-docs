@@ -9,7 +9,7 @@
 
 <p align="center"><img src="https://s26.postimg.org/xih11p6mh/dev_promo.png" width=700 alt="\"></p>
 
-------------
+------------------------------
 
 Steemit is the social media platform where everyone gets paid for creating and curating content.
 
@@ -18,9 +18,9 @@ The following API documents provide details on how to interact with the Steem bl
 The developer portal will also serve as a toolbox for steem clients, libraries, and language wrappers.
 
 ### Contributing
-------------
+------------------------------
 
-Steemit docs are built with the great [slate](https://github.com/lord/slate) framework.  Slate supports markdown for editing content. 
+Steemit docs are built with the great [slate](https://github.com/lord/slate) framework.  Slate supports markdown for editing our API documentation. 
 
 1. Fork this repository on Github.
 2. Clone this repository to your hard drive with `git clone https://github.com/steemit/steemit-docs.git`
