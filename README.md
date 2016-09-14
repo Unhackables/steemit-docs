@@ -1,6 +1,6 @@
 # steemit API Documentation
 
-![N|Solid](https://s26.postimg.org/klpwu1art/screenshot.png)
+![N|Solid](https://s26.postimg.org/xih11p6mh/dev_promo.png)
 
 The example above was created with Slate. Check it out at [lord.github.io/slate](lord.github.io/slate)
 
