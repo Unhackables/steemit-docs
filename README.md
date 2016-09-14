@@ -1,14 +1,12 @@
 <p align="center">
-  <img src="https://steem.io/images/steem.png" alt="Steemit API Portal" width="226">
+  <img src="https://s26.postimg.org/ym15dnr9l/steem_logo.png" alt="Steemit API Portal" width="226">
   <br>
   
 </p>
 
-<p align="center">Welcome to the [steemit](https://steemit.com) API and Developer wiki portal!</p>
+<p align="center">Welcome to the <a href="https://steemit.com">steemit</a> API and Developer Wiki.</p>
 
 <p align="center"><img src="https://s26.postimg.org/xih11p6mh/dev_promo.png" width=700 alt="\"></p>
-
-<p align="center"><em>Steemit API docs are created with Slate. Check it out at <a href="https://lord.github.io/slate">lord.github.io/slate</a>.</em></p>
 
 
 Steemit is the social media platform where everyone gets paid for creating and curating content.
