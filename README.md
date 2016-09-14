@@ -1,10 +1,17 @@
-# steemit API Documentation
+<p align="center">
+  <img src="https://steem.io/images/steem.png" alt="Steemit API Portal" width="226">
+  <br>
+  
+</p>
 
-![N|Solid](https://s26.postimg.org/xih11p6mh/dev_promo.png)
+<p align="center">Welcome to the [steemit](https://steemit.com) API and Developer wiki portal!</p>
 
-The example above was created with Slate. Check it out at [lord.github.io/slate](lord.github.io/slate)
+<p align="center"><img src="https://s26.postimg.org/xih11p6mh/dev_promo.png" width=700 alt="\"></p>
 
-Welcome to the [steemit](https://steemit.com) API and Developer wiki portal! Steemit is the social media platform where everyone gets paid for creating and curating content.
+<p align="center"><em>Steemit API docs are created with Slate. Check it out at <a href="https://lord.github.io/slate">lord.github.io/slate</a>.</em></p>
+
+
+Steemit is the social media platform where everyone gets paid for creating and curating content.
 
 The following API documents provide details on how to interact with the Steem blockchain database API which can get information on accounts, content, blocks and much more!
 
