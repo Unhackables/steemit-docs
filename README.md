@@ -9,6 +9,8 @@
 
 <p align="center"><img src="https://s26.postimg.org/xih11p6mh/dev_promo.png" width=700 alt="\"></p>
 
+<p align="center">The Live Steem API Developer docs can be viewed at<a href="https://steemit.github.io/steemit-docs" target="_blank">steemit API docs</a></p>
+
 ------------------------------
 
 Steemit is the social media platform where everyone gets paid for creating and curating content.
