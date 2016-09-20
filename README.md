@@ -5,7 +5,7 @@
   
 </p>
 
-<p align="center">Welcome to the <a href="https://steemit.com" target="_blank">steemit</a> API and Developer Wiki.</p>
+<p align="center">Welcome to the <a href="https://steemit.com" target="_blank">steemit</a> API and Developer Docs.</p>
 
 <p align="center"><img src="http://s3.postimg.org/iodtupplf/steemdev_promo.png" width=700 alt="\"></p>
 
@@ -24,10 +24,9 @@ The developer portal will also serve as a toolbox for steem clients, libraries, 
 
 Steemit docs are built with the great [slate](https://github.com/lord/slate) framework.  Slate supports markdown for editing our API documentation. 
 
-1. Fork this repository on Github.
-2. Clone this repository to your hard drive with `git clone https://github.com/steemit/steemit-docs.git`
-3. `cd steemit-docs`
-4. Initialize and start Slate. You can either do this locally, or with Vagrant:
+1. Clone this repository to your hard drive with `git clone https://github.com/steemit/steemit-docs.git`
+2. `cd steemit-docs`
+3. Initialize and start Slate. You can either do this locally, or with Vagrant:
 
 ```shell
 # either run this to run locally
@@ -38,10 +37,12 @@ bundle exec middleman server
 vagrant up
 ```
 
+4. The docs should now be viewable at `http://localhost:4567/`
+
 ### Contributing and Publishing New Updates
 ------------------------------
 
 1.  Commit your changes locally
-2.  Make sure your origin remote is set to github.com/steemit/steemit-docs
+2.  Make sure your origin remote is set to `https://github.com/steemit/steemit-docs`
 3.  Git push origin master
 4.  Run ./deploy.sh
