@@ -19,7 +19,7 @@ The following API documents provide details on how to interact with the Steem bl
 
 The developer portal will also serve as a toolbox for steem clients, libraries, and language wrappers.
 
-### Contributing
+### Installing Locally
 ------------------------------
 
 Steemit docs are built with the great [slate](https://github.com/lord/slate) framework.  Slate supports markdown for editing our API documentation. 
@@ -38,3 +38,10 @@ bundle exec middleman server
 vagrant up
 ```
 
+### Contributing and Publishing New Updates
+------------------------------
+
+1.  Commit your changes locally
+2.  Make sure your origin remote is set to github.com/steemit/steemit-docs
+3.  Git push origin master
+4.  Run ./deploy.sh
