@@ -7,7 +7,7 @@
 
 <p align="center">Welcome to the <a href="https://steemit.com" target="_blank">steemit</a> API and Developer Wiki.</p>
 
-<p align="center"><img src="https://s26.postimg.org/xih11p6mh/dev_promo.png" width=700 alt="\"></p>
+<p align="center"><img src="http://s3.postimg.org/iodtupplf/steemdev_promo.png" width=700 alt="\"></p>
 
 <p align="center">The Live Steem API Developer docs can be viewed at<a href="https://steemit.github.io/steemit-docs" target="_blank"> steemit API docs</a></p>
 
