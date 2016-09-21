@@ -128,6 +128,7 @@ get_block
     "extensions": [],
     "signatures": []
   }
+}
 
 get_block_header
 {
