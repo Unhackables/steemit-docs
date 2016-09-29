@@ -360,6 +360,22 @@ get_active_witnesses
 
 # Libraries/Wrappers
 
+Listed below is the ever-growing list of steem toolkit libraries, pluggins and wrappers to make consuming steem data a breeze. 
+
+This list will frequently be updated as new Libraries/Wrappers are released.
+
+Direct links to respective GitHub repositories along with example when available are also included. 
+
+*Categorized below is a list of development tools - if your looking for steem apps please visit [Steemtools](http://steemtools.com)*
+
+# Piston
+
+### Python Based - Swiss army knife for interacting with the STEEM blockchain.
+    
+Command line tool to interact with the STEEM network
+
+`https://github.com/xeroc/piston`
+
 # Steemduino
 
 ### An Open Source Arduino Library for Steem
