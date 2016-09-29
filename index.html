@@ -463,6 +463,35 @@ steem developers are encouraged to contribute as this becomes the ultimate devel
 
 <p><code class="prettyprint">cancel_transfer_from_savings_operation</code></p>
 
+<h1 id="libraries-wrappers">Libraries/Wrappers</h1>
+
+<h1 id="steemduino">Steemduino</h1>
+
+<h3 id="an-open-source-arduino-library-for-steem">An Open Source Arduino Library for Steem</h3>
+
+<p>steemduino allows you to communicate with the Steem websocket API using an Arduino, the open source electronics platform.</p>
+
+<p><code class="prettyprint">https://github.com/jonblack/steemduino</code></p>
+
+<h1 id="steemjs">SteemJS</h1>
+
+<h3 id="lightweight-javascript-library-to-communicate-with-steemd">Lightweight JavaScript library to communicate with steemd</h3>
+
+<p><code class="prettyprint">https://github.com/pharesim/steemjs</code></p>
+<pre class="highlight plaintext"><code>&lt;script type="text/javascript" src="js/steem.min.js"&gt;&lt;/script&gt;
+
+&lt;script type="text/javascript"&gt;
+ var server = 'wss://steemit.com/ws';
+ var ws = new WebSocketWrapper(server);
+ ws.connect().then(function(response) {
+   var steem = new SteemWrapper(ws);
+   steem.send('get_dynamic_global_properties',[], function(response) {
+     // do stuff
+   });
+ });
+&lt;/script&gt;'
+</code></pre>
+
       </div>
       <div class="dark-box">
           <div class="lang-selector">
