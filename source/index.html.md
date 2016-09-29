@@ -358,4 +358,36 @@ get_active_witnesses
 
 `cancel_transfer_from_savings_operation`
 
+# Libraries/Wrappers
+
+# Steemduino
+
+### An Open Source Arduino Library for Steem
+
+steemduino allows you to communicate with the Steem websocket API using an Arduino, the open source electronics platform.
+
+`https://github.com/jonblack/steemduino`
+
+
+# SteemJS
+
+### Lightweight JavaScript library to communicate with steemd
+
+`https://github.com/pharesim/steemjs`
+
+```
+<script type="text/javascript" src="js/steem.min.js"></script>
+
+<script type="text/javascript">
+ var server = 'wss://steemit.com/ws';
+ var ws = new WebSocketWrapper(server);
+ ws.connect().then(function(response) {
+   var steem = new SteemWrapper(ws);
+   steem.send('get_dynamic_global_properties',[], function(response) {
+     // do stuff
+   });
+ });
+</script>'
+```
+
 

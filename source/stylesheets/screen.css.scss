@@ -103,11 +103,26 @@ nav li {
 }
 
 .tocify-wrapper a {
-  color: #596065;
+  color: rgba(27,58,82,0.6);
+  font-weight: 400;
 }
 
 .tocify-focus a {
   color: white;
+}
+
+// custom font weight color for headers by level
+// api documentation
+ul#tocify-header0 {
+  a {
+    font-weight: 800;
+  }
+}
+// libraries
+ul#tocify-header11 {
+  a {
+    font-weight: 800;
+  }
 }
 
 .logo {
