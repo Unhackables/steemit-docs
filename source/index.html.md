@@ -358,7 +358,7 @@ get_active_witnesses
 
 `cancel_transfer_from_savings_operation`
 
-# Libraries/Wrappers
+# Tools/Wrappers
 
 Listed below is the ever-growing list of steem toolkit libraries, pluggins and wrappers to make consuming steem data a breeze. 
 
@@ -378,32 +378,59 @@ Command line tool to interact with the STEEM network
 
 # Steemduino
 
-### An Open Source Arduino Library for Steem
+### An Open Source Arduino Library for Steem.
 
 steemduino allows you to communicate with the Steem websocket API using an Arduino, the open source electronics platform.
 
 `https://github.com/jonblack/steemduino`
 
 
-# SteemJS
+# SteemJS ~ 1 
 
-### Lightweight JavaScript library to communicate with steemd
+### Lightweight JavaScript library to communicate with steemd.
 
-`https://github.com/pharesim/steemjs`
+`https://github.com/adcpm/steem`
 
+```javascript
+<script src="./steem.min.js"></script>
+<script>
+steem.api.getAccounts(['ned', 'dan'], function(err, response){
+    console.log(err, response);
+});
+</script>
 ```
-<script type="text/javascript" src="js/steem.min.js"></script>
 
-<script type="text/javascript">
- var server = 'wss://steemit.com/ws';
- var ws = new WebSocketWrapper(server);
- ws.connect().then(function(response) {
-   var steem = new SteemWrapper(ws);
-   steem.send('get_dynamic_global_properties',[], function(response) {
-     // do stuff
-   });
- });
-</script>'
+# SteemJS ~ 2
+
+### Pure JavaScript Steem crypto library for node.js and browsers. Can be used to construct, sign and broadcast transactions in JavaScript.
+
+`https://github.com/svk31/steemjs-lib`
+
+```javascript
+// Example generate transaction
+
+var { TransactionBuilder, Login } = require("steemjs-lib");
+var login = new Login();
+login.setRoles(["posting"]);
+var loginSuccess = login.checkKeys({
+    accountName: "myacccount",
+    password: "mypassword",
+    auths: {
+        posting: [["STMpostingAuthKey", 1]]
+    }}
+);
 ```
+
+# Steem-rpc
+
+### A simple websocket wrapper enabling RPC communication with the steem client steemd for node.js and browsers.
+
+`https://github.com/svk31/steem-rpc`
+
+# Steemcli
+
+### A command-line client for posting content to Steem
+
+`https://github.com/yamadapc/steemcli`
 
 
