@@ -463,7 +463,7 @@ steem developers are encouraged to contribute as this becomes the ultimate devel
 
 <p><code class="prettyprint">cancel_transfer_from_savings_operation</code></p>
 
-<h1 id="libraries-wrappers">Libraries/Wrappers</h1>
+<h1 id="tools-wrappers">Tools/Wrappers</h1>
 
 <p>Listed below is the ever-growing list of steem toolkit libraries, pluggins and wrappers to make consuming steem data a breeze. </p>
 
@@ -483,30 +483,55 @@ steem developers are encouraged to contribute as this becomes the ultimate devel
 
 <h1 id="steemduino">Steemduino</h1>
 
-<h3 id="an-open-source-arduino-library-for-steem">An Open Source Arduino Library for Steem</h3>
+<h3 id="an-open-source-arduino-library-for-steem">An Open Source Arduino Library for Steem.</h3>
 
 <p>steemduino allows you to communicate with the Steem websocket API using an Arduino, the open source electronics platform.</p>
 
 <p><code class="prettyprint">https://github.com/jonblack/steemduino</code></p>
 
-<h1 id="steemjs">SteemJS</h1>
+<h1 id="steemjs-1">SteemJS ~ 1</h1>
 
-<h3 id="lightweight-javascript-library-to-communicate-with-steemd">Lightweight JavaScript library to communicate with steemd</h3>
+<h3 id="lightweight-javascript-library-to-communicate-with-steemd">Lightweight JavaScript library to communicate with steemd.</h3>
 
-<p><code class="prettyprint">https://github.com/pharesim/steemjs</code></p>
-<pre class="highlight plaintext"><code>&lt;script type="text/javascript" src="js/steem.min.js"&gt;&lt;/script&gt;
+<p><code class="prettyprint">https://github.com/adcpm/steem</code></p>
+<pre class="highlight javascript"><code><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">src</span><span class="o">=</span><span class="s2">"./steem.min.js"</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nx">steem</span><span class="p">.</span><span class="nx">api</span><span class="p">.</span><span class="nx">getAccounts</span><span class="p">([</span><span class="s1">'ned'</span><span class="p">,</span> <span class="s1">'dan'</span><span class="p">],</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">response</span><span class="p">);</span>
+<span class="p">});</span>
+<span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span></code></pre>
 
-&lt;script type="text/javascript"&gt;
- var server = 'wss://steemit.com/ws';
- var ws = new WebSocketWrapper(server);
- ws.connect().then(function(response) {
-   var steem = new SteemWrapper(ws);
-   steem.send('get_dynamic_global_properties',[], function(response) {
-     // do stuff
-   });
- });
-&lt;/script&gt;'
+<h1 id="steemjs-2">SteemJS ~ 2</h1>
+
+<h3 id="pure-javascript-steem-crypto-library-for-node-js-and-browsers-can-be-used-to-construct-sign-and-broadcast-transactions-in-javascript">Pure JavaScript Steem crypto library for node.js and browsers. Can be used to construct, sign and broadcast transactions in JavaScript.</h3>
+
+<p><code class="prettyprint">https://github.com/svk31/steemjs-lib</code></p>
+<pre class="highlight javascript"><code><span class="c1">// Example generate transaction</span>
+
+<span class="kd">var</span> <span class="p">{</span> <span class="nx">TransactionBuilder</span><span class="p">,</span> <span class="nx">Login</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"steemjs-lib"</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">login</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Login</span><span class="p">();</span>
+<span class="nx">login</span><span class="p">.</span><span class="nx">setRoles</span><span class="p">([</span><span class="s2">"posting"</span><span class="p">]);</span>
+<span class="kd">var</span> <span class="nx">loginSuccess</span> <span class="o">=</span> <span class="nx">login</span><span class="p">.</span><span class="nx">checkKeys</span><span class="p">({</span>
+    <span class="na">accountName</span><span class="p">:</span> <span class="s2">"myacccount"</span><span class="p">,</span>
+    <span class="na">password</span><span class="p">:</span> <span class="s2">"mypassword"</span><span class="p">,</span>
+    <span class="na">auths</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">posting</span><span class="p">:</span> <span class="p">[[</span><span class="s2">"STMpostingAuthKey"</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
+    <span class="p">}}</span>
+<span class="p">);</span>
 </code></pre>
+
+<h1 id="steem-rpc">Steem-rpc</h1>
+
+<h3 id="a-simple-websocket-wrapper-enabling-rpc-communication-with-the-steem-client-steemd-for-node-js-and-browsers">A simple websocket wrapper enabling RPC communication with the steem client steemd for node.js and browsers.</h3>
+
+<p><code class="prettyprint">https://github.com/svk31/steem-rpc</code></p>
+
+<h1 id="steemcli">Steemcli</h1>
+
+<h3 id="a-command-line-client-for-posting-content-to-steem">A command-line client for posting content to Steem</h3>
+
+<p><code class="prettyprint">https://github.com/yamadapc/steemcli</code></p>
 
       </div>
       <div class="dark-box">
