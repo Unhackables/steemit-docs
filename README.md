@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://s26.postimg.org/ym15dnr9l/steem_logo.png" alt="Steemit API Portal" width="226">
+  <img src="https://raw.githubusercontent.com/steemit/steemit-docs/master/source/images/steemdev.png" alt="Steemit API Portal" width="226">
   <br>
   <br>
   
@@ -7,7 +7,7 @@
 
 <p align="center">Welcome to the <a href="https://steemit.com" target="_blank">steemit</a> API and Developer Docs.</p>
 
-<p align="center"><img src="http://s3.postimg.org/iodtupplf/steemdev_promo.png" width=700 alt="\"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/steemit/steemit-docs/master/source/images/preview.png" width=700 alt="\"></p>
 
 <p align="center">The Live Steem API Developer docs can be viewed at<a href="https://steemit.github.io/steemit-docs" target="_blank"> steemit API docs</a></p>
 
